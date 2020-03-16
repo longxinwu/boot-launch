@@ -15,6 +15,8 @@ public class UserController {
     @RequestMapping("/saveUser")
     public String saveData() throws ParseException {
         userRepo.save(new User("Hello"));
+        userRepo.save(new User("New"));
+        userRepo.save(new User("Year"));
         return "successful";
     }
     @RequestMapping("getUser")
